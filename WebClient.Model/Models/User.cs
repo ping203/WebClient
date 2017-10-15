@@ -1,0 +1,55 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace WebClient.Model.Models
+{
+    [Table("Users")]
+    public class User
+    {
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int ID { set; get; }
+
+        [Required]
+        [MaxLength(200)]
+        public string Name { set; get; }
+
+        [Required]
+        public DateTime Born { set; get; }
+
+        [Required]
+        [MaxLength(200)]
+        public string Address { set; get; }
+
+        [Required]
+        [MaxLength(100)]
+        public string Position { set; get; }
+
+        [Required]
+        [MaxLength(15)]
+        public string Mobile { set; get; }
+
+        [MaxLength(100)]
+        public string Skype { set; get; }
+
+        [MaxLength(100)]
+        public string Email { set; get; }
+
+        [MaxLength(100)]
+        public string Zalo { set; get; }
+
+        [MaxLength(100)]
+        public string Facebook { set; get; }
+
+        [Required]
+        public bool Active { set; get; }
+
+        [Required]
+        public int IDPhanQuyen { set; get; }
+    }
+}
