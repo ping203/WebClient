@@ -18,7 +18,6 @@ namespace WebClient.Data
         public DbSet<Administration> Administration { set; get; }
         public DbSet<Answer> Answer { set; get; }
         public DbSet<AnswerSheet> AnswerSheet { set; get; }
-        public DbSet<BANG> BANG { set; get; }
         public DbSet<DECHUAN> DECHUAN { set; get; }
         public DbSet<DECHUAN_QUESTION> DECHUAN_QUESTION { set; get; }
         public DbSet<DETRON> DETRON { set; get; }
@@ -41,7 +40,7 @@ namespace WebClient.Data
         public DbSet<TAG> TAG { set; get; }
         public DbSet<User> User { set; get; }
         public DbSet<VISITOR_STATISTIC> VISITOR_STATISTIC { set; get; }
-
+        public DbSet<Error> Error { set; get; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
            
