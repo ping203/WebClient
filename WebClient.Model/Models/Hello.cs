@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace WebClient.Model.Models
 {
-    class Example
+    class Hello
     {
-        string abc;//vi du vay hen, gio up len git ne
     }
 }
