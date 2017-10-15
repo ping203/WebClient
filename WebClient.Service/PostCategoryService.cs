@@ -29,6 +29,11 @@ namespace WebClient.Service
     {
         IPostCategoryRepository _postCategoryRepository;
         IUnitOfWork _unitOfWork;
+        public PostCategoryService(IPostCategoryRepository postCategoryRepository, IUnitOfWork unitOfWork)
+        {
+            this._postCategoryRepository = postCategoryRepository;
+            this._unitOfWork = unitOfWork;
+        }
         public PostCategory Add(PostCategory postCategory)
         {
             return _postCategoryRepository.Add(postCategory);

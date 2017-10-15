@@ -36,7 +36,7 @@ namespace WebClient.Data.Repositories
             //đối với xuất nhiều giá trị
             //VD: t muốn xuất tên môn học cùng với nội dung câu hỏi có mã subjectid truyền vào thì trong phâfn select làm như vầy
             //.select(i=>i new{i.descr, i.noOfQuestion}) ví dụ vậy
-            return this.DbContext.Subject.Where(x => x.SubjectID == subjectID).Select(i => i.Descr).SingleOrDefault();
+            return this.DbContext.Subjects.Where(x => x.SubjectID == subjectID).Select(i => i.Descr).SingleOrDefault();
         }
     }
         

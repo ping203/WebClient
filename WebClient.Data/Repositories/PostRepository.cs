@@ -21,8 +21,8 @@ namespace WebClient.Data.Repositories
 
         public IEnumerable<POST> GetAllByTag(int tag, int pageIndex, int pageSize, out int totalRow)
         {
-            var query = from p in DbContext.POST
-                        join pt in DbContext.POSTTAG
+            var query = from p in DbContext.POSTs
+                        join pt in DbContext.POSTTAGs
                         on p.ID equals pt.IDPost
                         where pt.IDTag == tag && p.Status
                         orderby p.CreatedDate descending
