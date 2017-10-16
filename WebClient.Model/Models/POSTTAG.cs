@@ -13,9 +13,17 @@ namespace WebClient.Model.Models
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [Column(Order = 1)]
         public int IDPost { set; get; }
 
-        [Required]
+        [Key]
+        [Column(TypeName = "int", Order = 2)]
         public int IDTag { set; get; }
+
+        [ForeignKey("IDPost")]
+        public virtual POST Post { set; get; }
+
+        [ForeignKey("IDTag")]
+        public virtual TAG Tag { set; get; }
     }
 }
