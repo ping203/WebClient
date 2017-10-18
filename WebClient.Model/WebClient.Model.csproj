@@ -77,7 +77,6 @@
     <Compile Include="Models\Error.cs" />
     <Compile Include="Models\Feedback.cs" />
     <Compile Include="Models\FOOTER.cs" />
-    <Compile Include="Models\Hello.cs" />
     <Compile Include="Models\HoanVi.cs" />
     <Compile Include="Models\LOG_IN.cs" />
     <Compile Include="Models\MENU.cs" />
